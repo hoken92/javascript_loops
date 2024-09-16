@@ -48,10 +48,14 @@ As soon as you find the prime number, log that number and exit the loop.
 */
 
 //     Print “prime” for all prime numbers.
-for (let i = 5; i <= 20; i++) {
+for (let i = 5; i <= 40; i++) {
   //skip 1-3 prime numbers
   if (i <= 3) {
     continue;
+  }
+
+  if (i === i) {
+    i++;
   }
 
   let isPrime = true;
@@ -68,6 +72,8 @@ for (let i = 5; i <= 20; i++) {
   if (isPrime === true) {
     console.log(`${i} is a prime number.`);
   }
+
+  i--;
 }
 
 /** 
